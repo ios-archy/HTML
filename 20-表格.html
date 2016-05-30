@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p> 每个表格由table标签开始</p>
+<p>每个表格行由tr标签开始</p>
+<p>每个表格数据由标签开始</p>
+
+<h4>一列：</h4>
+<table border="0">
+    <tr>
+    <td>100</td>
+    </tr>
+</table>
+
+<h4>两行三列：</h4>
+<table border="1">
+    <tr>
+        <th>Heading</th>
+        <th>Another Heading</th>
+        <th>third Heading </th>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>400</td>
+        <td>500</td>
+        <td>600</td>
+    </tr>
+</table>
+
+<h4>垂直的表头</h4>
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <td>bill gates</td>
+    </tr>
+    <tr>
+        <th>电话</th>
+        <td>7487487474748</td>
+    </tr>
+    <tr>
+        <th>手机</th>
+        <td>1383838438</td>
+    </tr>
+</table>
+<br>
+<table border="2">
+    <tr>
+        <td> Some text</td>
+        <td> somde text</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td> some text</td>
+    </tr>
+
+</table>
+
+<p>带有标题的表格</p>
+<table border="4">
+    <caption>我是标题啊</caption>
+    <tr>
+        <td>11111</td>
+        <td>55555</td>
+        <td>66666</td>
+    </tr>
+    <tr>
+        <td>555555</td>
+        <td>666666</td>
+        <td>7777777</td>
+    </tr>
+</table>
+
+<h4>横跨两列的单元格</h4>
+<table border="5">
+    <tr>
+        <th>姓名</th>
+        <th colspan="2">电话</th>
+    </tr>
+    <tr>
+        <td>bill gates</td>
+        <td>55555455445</td>
+        <td>78888888888</td>
+    </tr>
+</table>
+
+<h4>横跨两行的单元格</h4>
+<table border="5">
+    <tr>
+    <th>姓名</th>
+    <td>bill  gates</td>
+    </tr>
+    <tr>
+        <th rowspan="2">电话</th>
+        <td>78787789</td>
+    </tr>
+    <tr>
+        <td>4444444</td>
+    </tr>
+</table>
+
+<br>
+<table border="1" >
+    <tr>
+        <td>
+            <p>这是一个段落</p>
+            <p>这是另一个段落</p>
+        </td>
+        <td>
+            这个单元包含一个表格
+            <table  border="2">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+             <tr>
+                 <td>C</td>
+                 <td>D</td>
+             </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>这个单元包含一个列表
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li>fengli</li>
+        </ul>
+        </td>
+        <td>HELLO</td>
+    </tr>
+</table>
+
+<br>
+<p>没有cellpading </p>
+<table border="1">
+    <tr>
+        <td>First</td>
+        <td>Row</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>Row</td>
+    </tr>
+</table>
+
+<h4>带有Cellpadding</h4>
+<table border="1" cellpadding="10">
+    <tr>
+        <td>First</td>
+        <td>Row</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>Row</td>
+    </tr>
+</table>
+
+<h4>间距</h4>
+<table border="2" cellspacing="10">
+    <tr>
+        <td>First</td>
+        <td>Row</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>Row</td>
+    </tr>
+</table>
+
+<br>
+<p>背景颜色：</p>
+<table bgcolor="red" border="1">
+    <tr>
+        <td>111</td>
+        <td>222</td>
+    </tr>
+    <tr>
+        <td>333</td>
+        <td>444</td>
+    </tr>
+</table>
+<br>
+<h4>背景图像</h4>
+<table border="1" backgroud="111.jpg">
+
+    <tr>
+        <td>1111</td>
+        <td>2222</td>
+    </tr>
+    <tr>
+        <td>3333</td>
+        <td>4444</td>
+    </tr>
+</table>
+
+<p>单元背景</p>
+<table border="1">
+    <tr>
+       <td bgcolor="green">111</td>
+        <td>2222</td>
+    </tr>
+    <tr >
+        <td bgcolor="green">4444</td>
+        <td>44444</td>
+    </tr>
+
+</table>
+
+<br>
+<p>align使用</p>
+<table width="400" border="1">
+    <tr>
+        <th>类目</th>
+        <th>金额</th>
+        <th>时间</th>
+    </tr>
+    <tr>
+        <td align="left">消费项目</td>
+        <td align="right">1月</td>
+        <td align="right">210.14</td>
+    </tr>
+    <tr>
+        <td align="left">衣服</td>
+        <td align="right">1111.0</td>
+        <td align="right">125.30</td>
+    </tr>
+    <tr>
+        <td align="left">食物</td>
+        <td align="right">124.50</td>
+        <td align="right">100.0</td>
+    </tr>
+</table>
+<br>
+<p><b>注释</b>frame属性无法在Internet Explorer 中正确显示</p>
+<p>Table with frame="box":</p>
+<table frame="box">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+<br>
+<p>Table with frame="above":</p>
+<table frame="above">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Month</td>
+        <td>$100</td>
+    </tr>
+</table>
+<br>
+<p>Table with frame="below":</p>
+<table frame="below">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+<br>
+<p>Table with frame="vsides":</p>
+<table frame="vsides">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+
+<br>
+<p>Table with frame="hsides":</p>
+<table frame="hsides">
+    <tr>
+    <th>Month</th>
+    <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+</body>
+</html>
