@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form>
+    名：<input type="text" name="firstname">
+    <br/>
+    姓：<input type="text" name="lastname">
+</form>
+<br>
+
+<form>
+    用户：<input type="text" name="username">
+    <br/>
+    密码：<input type="password" name="password">
+</form>
+<p>请注意，当您在密码域中输入字符时，浏览器将使用项目符号来代替这些字符</p>
+<br/>
+
+<form>
+    <input type="radio" name="sex" value="male"/> Male
+    <br/>
+    <input type="radio" name="sex" value="female"/>Female
+</form>
+<br/>
+
+<form>
+    <input type="checkbox" name="bike"> I have a bike
+    <br/>
+    <input type="checkbox" name="car"> I have a car
+</form>
+<br/>
+
+<form name="input" action="23-布局.html" method="get">
+    username:<input type="text" name="user"/>
+    <input type="submit" value="Submit">
+</form>
+
+<br/>
+
+<form>
+    我喜欢自行车：<input type="checkbox" name="Bike">
+    <br/>
+    我喜欢汽车：<input type="checkbox" name="Car">
+</form>
+
+<br/>
+
+<p>简单的下拉列表</p>
+
+<form>
+    <select name="cars">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+        <option value="fiat">fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+</form>
+
+<br/>
+
+<p>带预选值得下拉列表</p>
+
+<form>
+    <select name="cars">
+        <option value="volvo">volvo</option>
+        <option value="saab" selected="selected">saab</option>
+        <option value="fiat">fiat</option>
+        <option value="audi">audi</option>
+    </select>
+</form>
+<br>
+
+<form>
+    <input type="button" value="hello world!">
+</form>
+<br>
+
+<p>带标题的框</p>
+
+<form>
+    <fieldset>
+        <legend>健康信息</legend>
+        身高：<input type="text">
+        体重：<input type="text">
+    </fieldset>
+</form>
+<p>如果表单周围没有边框，说明你的浏览器太老了</p>
+</body>
+
+
+<br>
+
+<form action="MAILTO:someone@w3school.com.cn" method="post" enctype="text/plain">
+    <h3>这个表单会把电子邮件发送到W3School</h3>
+    姓名：<br>
+    <input type="text" name="name" value="yourname" size="20">
+    <br>
+    电邮：<br/>
+    <input type="text" name="mail" value="youremail" size="20">
+    <br>
+    内容：<br>
+    <input type="text" name="comment" value="yourcomment" size="40">
+    <br>
+    <br/>
+    <input type="submit" value="发送">
+    <input type="reset" value="重置">
+</form>
+</html>
