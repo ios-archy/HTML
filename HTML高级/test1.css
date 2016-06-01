@@ -1,11 +1,11 @@
-
 p {
-    /*font: 15pt;*/
+    font: 30px;
+    margin-left: 20px;
     background-color: green;
 }
 
 body {
-    background-color: red;
+    background-color: gray;
 }
 
 hr {
