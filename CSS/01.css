@@ -1,0 +1,78 @@
+
+p {
+    text-indent: 2cm;
+    font-size: 300%;
+    color: black;
+
+}
+
+body {
+    color: red;
+    font-family: Fantasy;
+    background-color: white;
+    /*background-image: url("test.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+}
+
+h1 {
+    font-family: Georgia, serif;
+    /*background-color: green ;*/
+    color: grey;
+    text-align: center;
+    text-decoration: overline;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 300%;
+}
+
+h2 {
+    background-color: transparent;
+    text-align: right;
+    text-decoration: line-through;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+h4 {
+    text-align: left;
+    color: blue;
+    text-decoration: blink;
+}
+
+p.no2 {
+    background-color: gray;
+    padding: 30px;
+    color: blue
+}
+
+p.small {
+    text-indent: 1cm;
+    line-height: 2;
+}
+
+p.big {
+    line-height: 10;
+}
+
+p.uppercase {
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    letter-spacing: 5px;
+    text-transform: lowercase;
+}
+
+p.capitalize {
+    word-spacing: -0.5em;
+    text-transform: capitalize;
+}
