@@ -9,3 +9,7 @@ function myFunction() {
     }
 
 }
+
+function myFunction2() {
+    document.write("糟糕了，文档跑丢了");
+}
