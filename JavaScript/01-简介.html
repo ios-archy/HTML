@@ -25,8 +25,15 @@
 </p>
 <script>
     function myFunction() {
-        x.document.getElementById("demo");//查找元素
-        x.innerHTML = "Hello JavaScript";
+        x = document.getElementById("demo");//查找元素
+        if (x.innerHTML.match("html")) {
+            x.innerHTML = "Hello JavaScript";
+            x.style.color = "red";
+        } else {
+            x.innerHTML = " JavaScript 能改变html元素的内容";
+            x.style.color = "green";
+        }
+
     }
 </script>
 <button type="button" onclick="myFunction()">你点我试试</button>
