@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function myFunction() {
+            var x = "";
+            var time = new Date().getMinutes();
+            if (time < 10) {
+                x = "Good day";
+            }
+            else {
+                x = "is a bad day";
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+<p>如果时间早于 20:00，会获得问候 "Good day"</p>
+<button type="button" onclick="myFunction()">点老子试试</button>
+<p id="demo"></p>
+</body>
+</html>
