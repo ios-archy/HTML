@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<div id="div1">
+    <p id="p1">这是一个段落</p>
+
+    <p id="p2">这是另一个段落</p>
+</div>
+<script>
+    var para = document.createElement("h1");
+    var node = document.createTextNode("这是一个追加的新段落1");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+</script>
+<script>
+    var para = document.createElement("h1");
+    var node = document.createTextNode("这是一个追加的新段落2");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+</script>
+</body>
+</html>

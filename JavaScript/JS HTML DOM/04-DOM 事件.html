@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function changeText(id) {
+            id.innerHTML = "谢谢";
+        }
+        function displaydate() {
+            document.getElementById("demo").innerHTML = new Date();
+        }
+        function checkCookies() {
+            if (navigator.cookieEnabled == true) {
+                alert("已启用 cookie")
+            }
+            else {
+                alert("未启用 cookie")
+            }
+        }
+        function myFunction() {
+            var x = document.getElementById("frame");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+<body onload="checkCookies()">
+<h1 onclick="changeText(this)"> 请点击该文本</h1>
+<button onclick="displaydate()">点老子试试</button>
+<P id="demo"></P>
+
+<p>请输入英文字符：<input type="text" id="frame" onchange="myFunction()"></p>
+
+<p>当您离开输入字段时，会触发将输入文本转换为大写的函数.</p>
+</body>
+</html>
