@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var text = "";
+        function message() {
+            try {
+                adddlert("Welcom guest!!!");
+            }
+            catch (err) {
+                text = "There was an error on this page.\n\n";
+                text += "Error description:" + err.message + "\n\n";
+                text += "Click Ok on continue.\n\n";
+                alert(text);
+            }
+        }
+
+        function myFunction() {
+            try {
+                var x = document.getElementById("demo").value;
+                if (x == "") throw  "值为空";
+                if (isNaN(x)) throw "不是数字";
+                if (x > 10) throw "太大";
+                if (x < 5) throw "太小";
+            }
+            catch (err) {
+                var y = document.getElementById("mess");
+                y.innerHTML = "错误：" + err + ".";
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="View message" onclick="message()">
+
+<br/>
+<br/>
+
+<p>请输入5到10之间的数字：</p>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">测试输入值</button>
+<p id="mess"></p>
+</body>
+</html>
