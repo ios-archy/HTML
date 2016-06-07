@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var txt = "Hello world";
+    document.write(txt.length);//字符串的长度
+</script>
+<hr/>
+<script type="text/javascript">
+    var txt = "Hello world";
+    document.write("<p>big:" + txt.big() + "</p>");
+    document.write("<p>Small:" + txt.small() + "</p>");
+
+    document.write("<p>Bold:" + txt.bold() + "<p/>");
+    document.write("<p>Italic:" + txt.italics() + "<p/>");
+
+    document.write("<p>Blink:" + txt.blink() + "（does not work in IE）</p>");
+    document.write("<p>Fixed:" + txt.fixed() + "</p>");
+    document.write("<p>Strike:" + txt.strike() + "</p>");
+
+    document.write("<p>Fontercolor:" + txt.fontcolor() + "</p>");
+    document.write("<p>Fontsize" + txt.fontsize() + "</p>");
+
+
+    document.write("<p>Lowercase:" + txt.toLowerCase() + "</p>");
+    document.write("<p>Uppercase:" + txt.toUpperCase() + "</p>");
+
+    document.write("<p>Subcript:" + txt.sub() + "</p>");
+    document.write("<p>Superscript:" + txt.sup() + "</p>");
+
+    document.write("<p>Link: " + txt.link("http://www.baidu.com") + "</p>");
+</script>
+
+<hr>
+<script>
+    var str = "Hello world";
+    document.write(str.indexOf("hello") + "<br/>");
+    document.write(str.indexOf("World") + "<br/>");
+    document.write(str.indexOf("world"));
+</script>
+
+<hr/>
+<script>
+    var str = "Hello world!";
+    document.write(str.match("world") + "<br/>")
+    document.write(str.match("World") + "<br/>")
+    document.write(str.match("worlld") + "<br/>")
+    document.write(str.match("world!"))
+</script>
+
+<hr/>
+<script>
+    var str = "Visit Microsoft!";
+    document.write(str.replace(/Visit/, "大傻逼"))
+</script>
+<hr/>
+<script>
+    var txt = "Hello world";
+    document.write(txt.toUpperCase());
+</script>
+</body>
+</html>

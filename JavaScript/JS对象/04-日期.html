@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    document.write(new Date());
+</script>
+<hr>
+<script>
+    var d = new Date();
+    document.write("从 1970/01/01 至今已过去 " + d.getTime() + "毫秒");
+</script>
+
+
+<hr/>
+<script>
+    var d = new Date();
+    d.setFullYear(1992, 10, 3) //表示月份的参数介于 0 到 11 之间。也就是说，如果希望把月设置为 8 月，则参数应该是 7。
+    document.write(d);
+    var today = new Date()
+    if (d > today) {
+        alert("Today is before 3th nov 1992");
+    }
+    else {
+        alert("Today is after 3th nov 1992")
+    }
+</script>
+<hr>
+<script>
+    var d = new Date();
+    document.write(d.toUTCString())
+</script>
+<hr>
+<script>
+    var d = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "星期日";
+    weekday[1] = "星期一";
+    weekday[2] = "星期二";
+    weekday[3] = "星期三";
+    weekday[4] = "星期四";
+    weekday[5] = "星期五";
+    weekday[6] = "星期六";
+    document.write(d.getDay() + "<br/>");
+    document.write("今天是：" + weekday[d.getDay()]);
+
+</script>
+
+</body>
+</html>

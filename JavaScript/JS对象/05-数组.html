@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var myCars = new Array();
+    myCars[0] = "shabi"
+    myCars[1] = "dashabi"
+    myCars[2] = "ershabi"
+    for (i = 0; i < myCars.length; i++) {
+        document.write(myCars[i] + "<br/>")
+    }
+</script>
+
+<br/>
+<hr/>
+<script>
+    var x
+    var mycars = new Array()
+    mycars[0] = "shabi"
+    mycars[1] = "dashabi"
+    mycars[2] = "ershabi"
+    for (x in mycars) {
+        document.write(mycars[x] + "<br/>")
+    }
+</script>
+<hr/>
+<script>
+    var arr = new Array(3)
+    arr[0] = "shabi"
+    arr[1] = "ershabi"
+    arr[2] = "erque"
+
+    var arr1 = new Array(3)
+    arr1[0] = "shabi"
+    arr1[1] = "ershabi"
+    arr1[2] = "erque"
+
+    document.write(arr.concat(arr1))
+</script>
+<hr/>
+<script>
+    var arr = new Array(3)
+    arr[0] = "hahha"
+    arr[1] = "ehehehhe"
+    arr[2] = "ehehehehhe"
+
+    document.write(arr.join());
+    document.write("<br/><br/>");
+    document.write(arr.join("."))
+</script>
+
+<hr/>
+<script>
+
+    function sortNumber(a, b) {
+        return a - b;
+    }
+
+    var arr = new Array(6)
+    arr[0] = "hahha"
+    arr[1] = "ssss"
+    arr[2] = "fff"
+    arr[3] = "uuu"
+    arr[4] = "nnn"
+    arr[5] = "jjjj"
+    document.write(arr + "<br/>")
+    document.write(arr.sort())
+    document.write("<hr/>")
+    var arr2 = new Array(6)
+    arr2[0] = "33"
+    arr2[1] = "98"
+    arr2[2] = "111"
+    arr2[3] = "2"
+    arr2[4] = "345"
+    arr2[5] = "10"
+    document.write(arr2 + "<br/>")
+    document.write(arr2.sort(sortNumber))
+</script>
+</body>
+</html>
