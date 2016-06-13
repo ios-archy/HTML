@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function newDoc() {
+            window.location.assign("http://localhost:63342/HTML/JavaScript/JS%20Window/04-History.html");
+        }
+    </script>
+</head>
+<body>
+<script>
+    document.write(location.href);
+    document.write("<br/>")
+    document.write(location.pathname);
+    document.write("<hr/>")
+</script>
+
+<input type="button" value="加载新文档" onclick="newDoc()">
+</body>
+</html>

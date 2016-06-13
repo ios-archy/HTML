@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function disp_altert() {
+            //警告框
+            //警告框经常用于确保用户可以得到某些信息。
+            //当警告框出现后，用户需要点击确定按钮才能继续进行操作。
+            alert("我是警告框!" + "\n" + "你猜猜会不会换行啊");
+        }
+
+        function show_confirm() {
+            //确认框
+            //确认框用于使用户可以验证或者接受某些信息。
+            //当确认框出现后，用户需要点击确定或者取消按钮才能继续进行操作。
+            //如果用户点击确认，那么返回值为 true。如果用户点击取消，那么返回值为 false。
+            var r = confirm("Press a button!");
+            if (r == true) {
+                alert("You pressed OK!");
+            }
+            else {
+                alert("You pressed Cancel!");
+            }
+        }
+
+        function disp_prompt() {
+            //提示框
+            //提示框经常用于提示用户在进入页面前输入某个值。
+            //当提示框出现后，用户需要输入某个值，然后点击确认或取消按钮才能继续操纵。
+            //如果用户点击确认，那么返回值为输入的值。如果用户点击取消，那么返回值为 null。
+            var name = prompt("请输入您的名字", "bill gates")
+            {
+                if (name != null && name != "") {
+                    document.write("你好！" + name + "今天过得怎么样少年")
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="显示警告框" onclick="disp_altert()">
+<hr/>
+<input type="button" value="再次显示警告框" onclick="show_confirm()">
+<hr/>
+<input type="button" value="显示提示框" onclick="disp_prompt()">
+</body>
+</html>
