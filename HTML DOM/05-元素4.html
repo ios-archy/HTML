@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="div1">
+    <p>这个页面展示的是如何置换元素</p>
+
+    <p id="p1">This is a paragraph.</p>
+
+    <p id="p2">This is another paragraph.</p>
+</div>
+<script>
+    var para = document.createElement("p1");
+    var node = document.createTextNode("This is new。")
+    para.appendChild(node)
+
+    var parent = document.getElementById("div1");
+    var child = document.getElementById("p2");
+    parent.replaceChild(para, child);
+</script>
+</body>
+</html>

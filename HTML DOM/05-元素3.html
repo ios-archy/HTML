@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function removeFunction() {
+            var parent = document.getElementById("div1")
+            var child = document.getElementById("p1")
+            parent.removeChild(child)
+        }
+        function removeFunction1() {
+            var child = document.getElementById("p1")
+            child.parentNode.removeChild(child);
+        }
+
+    </script>
+</head>
+<body>
+<div id="div1">
+
+
+    <p id="p1">This is a paragraph.</p>
+
+    <p id="p2">This is another paragraph.</p>
+</div>
+<input type="button" value="移除子视图" onclick="removeFunction1()">
+</body>
+</html>

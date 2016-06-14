@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div onmouseover="mOver(this)"
+     onmouseout="mOut(this)"
+     onmousedown="mDown(this)"
+     onmouseup="mUp(this)"
+     style="background-color:#D94A38;width: 200px;height: 50px;padding-top: 25px;text-align: center;"
+        >
+    Mouse over me
+</div>
+<script>
+    function mOver(obj) {
+        obj.innerHTML = "thankyou"
+    }
+    function mOut(obj) {
+        obj.innerHTML = "把鼠标指针移动到上面"
+    }
+    function mDown(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "松开鼠标";
+    }
+    function mUp(obj) {
+        obj.style.background = "#D94A38";
+        obj.innerHTML = "谢谢大爷";
+    }
+</script>
+</body>
+</html>
