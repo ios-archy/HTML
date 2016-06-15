@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function whichButton(event) {
+            alert(event.keyCode)
+//            document.write("<p>"+ event.keyCode+"</p>"+"<br/>")
+        }
+
+    </script>
+</head>
+<body onkeyup="whichButton(event)">
+<p><b>注释：</b>在测试这个例子时，要确保右侧的框架获得了焦点。</p>
+
+<p>在键盘上按一个键。消息框会提示出该按键的 unicode。</p>
+</body>
+</html>

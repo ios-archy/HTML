@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function getElements() {
+            var x = document.getElementsByName("myInput");
+            //大爷的返回的是个数组啊
+            alert(x.length);
+        }
+    </script>
+</head>
+<body>
+<input name="myInput" type="text" size="20"/><br/>
+<input name="myInput" type="text" size="20"/><br/>
+<input name="myInput" type="text" size="20"/><br/>
+<br/>
+<input type="button" onclick="getElements()" value="名为‘myInput’的元素有多少个">
+</body>
+</html>

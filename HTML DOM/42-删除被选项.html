@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function deleselct() {
+            var x = document.getElementById("mySelect");
+            x.remove(x.selectedIndex)
+        }
+    </script>
+</head>
+<body>
+<form>
+    <select id="mySelect">
+        <option>苹果</option>
+        <option>桃子</option>
+        <option>香蕉</option>
+        <option>桔子</option>
+    </select>
+    <input type="button" onclick="deleselct()" value="删除选中项">
+</form>
+
+</body>
+</html>

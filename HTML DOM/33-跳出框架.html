@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function breakout() {
+            if (window.top != window.self) {
+                window.top.location = "27-重置.html"
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" onclick="breakout()" value="跳出框架">
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function validate() {
+            var at = document.getElementById("email").value.indexOf("@");
+            var age = document.getElementById("age").value
+            var fname = document.getElementById("fname").value
+
+            sunmitOK = "true"
+            if (fname.length > 10) {
+                alert("名字必须小于10个字符")
+                sunmitOK = "false"
+            }
+            if (isNaN(age) || age < 1 || age > 100) {
+                alert("年龄必须是1到100之间的数字")
+                sunmitOK = "false"
+            }
+            if (at == -1) {
+                alert("不是有效的电子邮件地址。")
+                sunmitOK = "false"
+            }
+
+            if (sunmitOK == "false") {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="07-导航.html" onsubmit="return validate()">
+    名字（最多10个字符）：<input type="text" id="fname" size="20"> <br/>
+    年龄（从1到100）:<input type="text" id="age" size="20"> <br/>
+    电子邮件：<input type="text" id="email" size="20"><br/>
+    <br/>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

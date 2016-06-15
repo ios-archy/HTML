@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function alterIndex() {
+            var x = document.getElementById("mySelect").selectedIndex;
+            var y = document.getElementsByTagName("option");
+            alert(y[x].text + " has the index of: " + (x + 1))
+        }
+    </script>
+</head>
+<body>
+<form>
+    <select id="mySelect">
+        <option>111</option>
+        <option>3444</option>
+        <option>555</option>
+        <option>677878</option>
+    </select>
+</form>
+<input type="button" onclick="alterIndex()" value="显示选中的index">
+</body>
+</html>

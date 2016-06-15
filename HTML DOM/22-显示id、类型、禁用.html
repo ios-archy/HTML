@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function alterId() {
+            var txt = "Id: " + document.getElementById("myButton").id;
+            txt = txt + ", type: " + document.getElementById("myButton").type;
+            alert(txt);
+            document.getElementById("myButton").disabled = true;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <button id="myButton" onclick="alterId()">请点击我！！！！</button>
+</form>
+</body>
+</html>

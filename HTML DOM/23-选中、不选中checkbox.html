@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function check() {
+            document.getElementById("mycheck").checked = true;
+        }
+        function unchek() {
+            document.getElementById("mycheck").checked = false;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="checkbox" id="mycheck"/>
+    <input type="button" onclick="check()" value="选定复选框"/>
+    <input type="button" onclick="unchek()" value="取消复选框"/>
+</form>
+</body>
+</html>
