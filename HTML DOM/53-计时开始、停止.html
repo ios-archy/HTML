@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var c = 0
+        var t
+        function timeCount() {
+            document.getElementById("txt").value = c;
+            c = c + 1;
+            t = setTimeout("timeCount()", 1000)
+        }
+        function stopCount() {
+            clearTimeout(t)
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="开始计时" onclick="timeCount()">
+<input type="text" id="txt">
+<input type="button" value="停止计时" onclick="stopCount()">
+</body>
+</html>

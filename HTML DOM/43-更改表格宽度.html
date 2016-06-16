@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function changeBorder() {
+            document.getElementById("myTable").border = "10";
+            document.getElementById("test").value = "丑死了"
+        }
+
+        function padding() {
+            document.getElementById("myTable").cellPadding = "15"
+        }
+        function spacing() {
+            document.getElementById("myTable").cellSpacing = "15"
+        }
+
+        function aboveFrames() {
+            document.getElementById("myTable").frame = "above"
+        }
+        function belowFrames() {
+            document.getElementById("myTable").frame = "below"
+        }
+
+        function rowRules() {
+            document.getElementById("myTable").rules = "rows"
+        }
+
+        function colRules() {
+            document.getElementById("myTable").rules = "cols"
+        }
+
+        function showRow() {
+            alert(document.getElementById("myTable").rows[0].innerHTML)
+        }
+
+        function showcell() {
+            alert(document.getElementById("myTable").rows[0].cells[0].innerHTML);
+        }
+
+        function creatCaption() {
+            var x = document.getElementById("myTable").createCaption();
+            x.innerHTML = "我的表哥主题";
+        }
+
+        function deleteRow(r) {
+            var i = r.parentNode.parentNode.rowIndex;
+            document.getElementById("myTable").deleteRow(i);
+        }
+
+        function insertRow() {
+            var x = document.getElementById("myTable").insertRow(0)
+            var y = x.insertCell(0);
+            var z = x.insertCell(1);
+            y.innerHTML = "New cell1"
+            z.innerHTML = "New cell2"
+        }
+
+        function instercell() {
+            var x = document.getElementById("tr0").insertCell(0)
+            x.innerHTML = "john"
+        }
+
+        function leftAlign() {
+            document.getElementById("header").align = "left";
+        }
+        function topAlign() {
+            document.getElementById("tr3").vAlign = "top"
+        }
+        function aligncell() {
+            document.getElementById("td1").align = "right"
+        }
+
+        function changeContent() {
+            var x = document.getElementById("myTable").rows[1].cells;
+            x[0].innerHTML = "你大爷的我是新的内容"
+        }
+        function changeColspan() {
+            document.getElementById("td1").colSpan = "2";
+        }
+    </script>
+</head>
+<body>
+<table border="1" id="myTable" width="50%">
+    <tr id="header">
+        <th>名</th>
+        <th>姓</th>
+    </tr>
+    <tr id="tr0">
+        <td>111</td>
+        <td><input type="button" value="删除" onclick="deleteRow(this)"></td>
+    </tr>
+    <tr>
+        <td id="td1">admas</td>
+        <td>dddd</td>
+    </tr>
+    <tr>
+        <td>333</td>
+        <td><input type="button" value="删除" onclick="deleteRow(this)"></td>
+    </tr>
+    <tr id="tr3">
+        <td>444谁谁谁水水水水水水水水</td>
+        <td>你们好。我是名字是 John Adams。
+            在本例中，我需要一段长的文本。
+            在本例中，我需要一段长的文本。
+            在本例中，我需要一段长的文本。
+        </td>
+    </tr>
+</table>
+<br/>
+<input id="test" type="button" onclick="changeBorder()" value="改变边框宽度">
+<br/>
+<input type="button" onclick="padding()" value="改变padding">
+<br/>
+<input type="button" onclick="spacing()" value="改变spacing">
+<br/>
+<input type="button" onclick="aboveFrames()" value="显示上边框">
+<br/>
+<input type="button" onclick="belowFrames()" value="显示下边框">
+<br/>
+<input type="button" onclick="rowRules()" value="仅显示行边框">
+<br/>
+<input type="button" onclick="colRules()" value="仅显示列边框">
+<br/>
+<input type="button" onclick="showRow()" value="显示第一行row的内容">
+<br/>
+<input type="button" onclick="showcell()" value="显示第一个单元">
+<br/>
+<input type="button" onclick="creatCaption()" value="创建标题">
+<br/>
+<input type="button" onclick="insertRow()" value="插入行">
+
+<br/>
+<input type="button" onclick="instercell()" value="插入单元格">
+<br/>
+<input type="button" onclick="leftAlign()" value="左对齐">
+
+<br/>
+<input type="button" onclick="topAlign()" value="上对齐表格">
+<br>
+<input type="button" onclick="aligncell()" value="对齐单元格">
+
+<br/>
+<input type="button" onclick="changeContent()" value="改变单元格内容">
+
+<br/>
+<input type="button" onclick="changeColspan()" value="改变 colspan">
+
+
+</body>
+
+</html>

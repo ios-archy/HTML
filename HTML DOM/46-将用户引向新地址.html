@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function currLocation() {
+            alert(window.location)
+        }
+        function newlocation() {
+            window.location = "http://www.baidu.com"
+        }
+        function reloadPage() {
+            window.location.reload()
+        }
+    </script>
+</head>
+<body>
+<input type="button" onclick="currLocation()" value="显示当前地址">
+<input type="button" onclick="newlocation()" value="引向新地址">
+<input type="button" onclick="reloadPage()" value="重新加载页面">
+</body>
+</html>
