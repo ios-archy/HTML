@@ -7,10 +7,11 @@
     <script>
         $(document).ready(function () {
             $("#hide").click(function () {
-                $("p").hide();
+//                $("p").hide(5000);
+                $("p").toggle(); //toggle() 方法可以来切换hide()和show()
             });
             $("#show").click(function () {
-                $("p").show();
+                $("p").show("fast");
             });
         });
     </script>
